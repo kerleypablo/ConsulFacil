@@ -18,6 +18,7 @@ public class Consulta {
     private Double valor;
     private String tipo;
     private Convenio convenio;
+    
 
     public Consulta(Agenda agenda, Paciente paciente, Medico medico, Consultorio consultorio, Double valor, String tipo) {
         this.agenda = agenda;

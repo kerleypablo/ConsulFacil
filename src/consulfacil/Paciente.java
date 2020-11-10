@@ -17,6 +17,7 @@ public class Paciente extends Usuario {
     private String profissao;
     private Prontuario prontuario;
     private Arquivo arquivo;
+    private Agenda agenda;
 
     public Paciente(String nome, String email, Integer senha, Integer telefone, Date dtaNascimento, Integer cpf ,String profissao) {
         super(nome, email, senha, telefone, dtaNascimento);
@@ -45,6 +46,14 @@ public class Paciente extends Usuario {
     
     public void addNota(String nota){
         arquivo.addNota(nota);
+    }
+
+    public Agenda getAgenda() {
+        return agenda;
+    }
+
+    public void setAgenda(Agenda agenda) {
+        this.agenda = agenda;
     }
     
     

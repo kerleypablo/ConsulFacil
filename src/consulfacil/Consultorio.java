@@ -14,6 +14,15 @@ public class Consultorio {
     private String nome;
     private Integer telefone;
     private String endereco;
+    private Medico medico;
+
+    public Medico getMedico() {
+        return medico;
+    }
+
+    public void setMedico(Medico medico) {
+        this.medico = medico;
+    }
 
     public Consultorio(String nome, Integer telefone, String endereco) {
         this.nome = nome;

@@ -15,6 +15,8 @@ import java.util.List;
  */
 public class Arquivo {
     
+    private Medico medico;
+    private Paciente paciente;
     private List<File> receita = new ArrayList<>();
     private List<File> pedidoExame = new ArrayList<>();
     private List<String> notas = new ArrayList<>();
@@ -57,6 +59,22 @@ public class Arquivo {
     public void addNota(String nota){
         notas.add(nota);
         
+    }
+
+    public Medico getMedico() {
+        return medico;
+    }
+
+    public void setMedico(Medico medico) {
+        this.medico = medico;
+    }
+
+    public Paciente getPaciente() {
+        return paciente;
+    }
+
+    public void setPaciente(Paciente paciente) {
+        this.paciente = paciente;
     }
    
 }

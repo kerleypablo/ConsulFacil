@@ -12,7 +12,7 @@ package consulfacil;
 public class Medicamento {
     
     public String NomeMedic;
-
+    
     public Medicamento(String NomeMedic) {
         this.NomeMedic = NomeMedic;
     }

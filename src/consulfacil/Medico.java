@@ -21,7 +21,7 @@ public class Medico extends Usuario {
     private List<Paciente> pacientes = new ArrayList<>();
     private List<Consultorio> consultorio = new ArrayList<>();
     private List<Especialidade> especialidade = new ArrayList<>();
-    
+    private Agenda agenda;
 
     public Medico(String nome, String email, Integer senha, Integer telefone, Date dtaNascimento, Integer crm , Integer cnpj, String nomeEspc) {
         super(nome, email, senha, telefone, dtaNascimento);
@@ -34,6 +34,14 @@ public class Medico extends Usuario {
         
     }
 
+    public Agenda getAgenda() {
+        return agenda;
+    }
+
+    public void setAgenda(Agenda agenda) {
+        this.agenda = agenda;
+    }
+    
     public Integer getCrm() {
         return crm;
     }
