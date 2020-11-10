@@ -5,7 +5,7 @@
  */
 package consulfacil;
 
-import java.util.Date;
+import java.util.Calendar;
 
 /**
  *
@@ -17,9 +17,9 @@ public class Usuario {
     private String email;
     private Integer senha ;
     private Integer telefone;
-    private Date dtaNascimento;
+    private Calendar dtaNascimento;
 
-    public Usuario(String nome, String email, Integer senha, Integer telefone, Date dtaNascimento) {
+    public Usuario(String nome, String email, Integer senha, Integer telefone, Calendar dtaNascimento) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
@@ -60,11 +60,11 @@ public class Usuario {
         this.telefone = telefone;
     }
 
-    public Date getDtaNascimento() {
+    public Calendar getDtaNascimento() {
         return dtaNascimento;
     }
 
-    public void setDtaNascimento(Date dtaNascimento) {
+    public void setDtaNascimento(Calendar dtaNascimento) {
         this.dtaNascimento = dtaNascimento;
     }
     

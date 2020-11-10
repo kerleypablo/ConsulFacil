@@ -5,7 +5,7 @@
  */
 package consulfacil;
 
-import java.util.Date;
+import java.util.Calendar;
 
 /**
  *
@@ -19,7 +19,7 @@ public class Paciente extends Usuario {
     private Arquivo arquivo;
     private Agenda agenda;
 
-    public Paciente(String nome, String email, Integer senha, Integer telefone, Date dtaNascimento, Integer cpf ,String profissao) {
+    public Paciente(String nome, String email, Integer senha, Integer telefone, Calendar dtaNascimento, Integer cpf ,String profissao) {
         super(nome, email, senha, telefone, dtaNascimento);
         
        this.cpf = cpf;

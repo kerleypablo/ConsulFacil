@@ -16,6 +16,9 @@ public class Prontuario {
     private List<Medicamento> medicamentos = new  ArrayList<>();
     private Usuario usuario;
 
+    public Prontuario() {
+    }
+
 
     public Prontuario(String tipoSanguineo) {
         this.tipoSanguineo = tipoSanguineo;
