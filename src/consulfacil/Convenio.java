@@ -12,6 +12,8 @@ package consulfacil;
 public class Convenio {
     
     private String nome;
+    
+ 
 
     public Convenio(String nome) {
         this.nome = nome;

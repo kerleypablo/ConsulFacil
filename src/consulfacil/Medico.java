@@ -23,8 +23,10 @@ public class Medico extends Usuario {
     private List<Consultorio> consultorio = new ArrayList<>();
     private List<Especialidade> especialidade = new ArrayList<>();
     private Agenda agenda;
+    
+ 
 
-    public Medico(String nome, String email, Integer senha, Integer telefone, Calendar dtaNascimento, Integer crm , Integer cnpj, String nomeEspc) {
+    public Medico(String nome, String email, Integer senha, Integer telefone, String dtaNascimento, Integer crm , Integer cnpj, String nomeEspc) {
         super(nome, email, senha, telefone, dtaNascimento);
         
         this.cnpj = cnpj;

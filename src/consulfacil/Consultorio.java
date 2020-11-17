@@ -16,6 +16,15 @@ public class Consultorio {
     private String endereco;
     private Medico medico;
 
+    
+
+    
+    public Consultorio(String nome, Integer telefone, String endereco) {
+        this.nome = nome;
+        this.telefone = telefone;
+        this.endereco = endereco;
+    }
+
     public Medico getMedico() {
         return medico;
     }
@@ -23,13 +32,8 @@ public class Consultorio {
     public void setMedico(Medico medico) {
         this.medico = medico;
     }
-
-    public Consultorio(String nome, Integer telefone, String endereco) {
-        this.nome = nome;
-        this.telefone = telefone;
-        this.endereco = endereco;
-    }
-
+    
+    
     public String getNome() {
         return nome;
     }

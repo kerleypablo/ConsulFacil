@@ -3,7 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+
+
 package consulfacil;
+
+import java.io.IOException;
 
 /**
  *
@@ -20,24 +25,33 @@ public class Consulta {
     private Convenio convenio;
     
 
-    public Consulta(Agenda agenda, Paciente paciente, Medico medico, Consultorio consultorio, Double valor, String tipo) {
+    public Consulta(Agenda agenda, Paciente paciente, Medico medico, Consultorio consultorio, Double valor, String tipo) throws Exception {
         this.agenda = agenda;
         this.paciente = paciente;
         this.medico = medico;
         this.consultorio = consultorio;
         this.valor = valor;
         this.tipo = tipo;
+        ValidarConsulta();
     }
 
-    public Consulta(Agenda agenda, Paciente paciente, Medico medico, Consultorio consultorio, Double valor, String tipo, Convenio convenio) {
+    public Consulta(Agenda agenda, Paciente paciente, Medico medico, Consultorio consultorio, String tipo, Convenio convenio) throws Exception {
         this.agenda = agenda;
         this.paciente = paciente;
         this.medico = medico;
-        this.consultorio = consultorio;
-        this.valor = valor;
+        this.consultorio = consultorio;      
         this.tipo = tipo;
         this.convenio = convenio;
+        ValidarConsulta();
     }
+    
+    private void ValidarConsulta() throws Exception{
+        if (this.agenda == null || this.paciente == null || this.medico == null || this.consultorio == null || this.tipo == null ){
+            throw new Exception();
+        } 
+    }
+    
+    
 
     public Agenda getAgenda() {
         return agenda;
@@ -94,6 +108,7 @@ public class Consulta {
     public void setConvenio(Convenio convenio) {
         this.convenio = convenio;
     }
+    
     
     
     
